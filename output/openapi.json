@@ -1,0 +1,179 @@
+{
+  "openapi" : "3.0.0",
+  "info" : {
+    "title" : "Auto Generated API Docs",
+    "version" : "1.0.0"
+  },
+  "paths" : {
+    "/api/Users" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/Challenges" : {
+      "post" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/Hints" : {
+      "post" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/Complaints" : {
+      "post" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/Recycles" : {
+      "post" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/Recycles/:id" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "delete" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "put" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/SecurityQuestions" : {
+      "post" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/SecurityAnswers" : {
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/BasketItems/:id" : {
+      "put" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/BasketItems" : {
+      "post" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/Quantitys/:id" : {
+      "delete" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/Quantitys" : {
+      "post" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/Feedbacks/:id" : {
+      "put" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/Cards" : {
+      "post" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      },
+      "get" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    },
+    "/api/Cards/:id" : {
+      "put" : {
+        "responses" : {
+          "200" : {
+            "description" : "Success"
+          }
+        }
+      }
+    }
+  }
+}

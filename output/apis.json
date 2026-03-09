@@ -1,0 +1,193 @@
+[ {
+  "method" : "GET",
+  "path" : "/api/Users",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "POST",
+  "path" : "/api/Challenges",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "POST",
+  "path" : "/api/Hints",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "GET",
+  "path" : "/api/Complaints",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "POST",
+  "path" : "/api/Complaints",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "GET",
+  "path" : "/api/Recycles",
+  "requestSchema" : {
+    "type" : "object",
+    "properties" : {
+      "Recycles" : {
+        "type" : "object"
+      }
+    },
+    "additionalProperties" : true
+  },
+  "responseSchema" : {
+    "type" : "object",
+    "properties" : {
+      "id" : {
+        "type" : "string"
+      },
+      "RecycleItem" : {
+        "type" : "object"
+      }
+    },
+    "additionalProperties" : true
+  }
+}, {
+  "method" : "POST",
+  "path" : "/api/Recycles",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "GET",
+  "path" : "/api/Recycles/:id",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "PUT",
+  "path" : "/api/Recycles/:id",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "DELETE",
+  "path" : "/api/Recycles/:id",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "POST",
+  "path" : "/api/SecurityQuestions",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "GET",
+  "path" : "/api/SecurityAnswers",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "PUT",
+  "path" : "/api/BasketItems/:id",
+  "requestSchema" : {
+    "type" : "object",
+    "properties" : {
+      "productId" : {
+        "type" : "string"
+      },
+      "quantity" : {
+        "type" : "integer",
+        "minimum" : 1
+      }
+    },
+    "required" : [ "productId", "quantity" ],
+    "additionalProperties" : false
+  },
+  "responseSchema" : {
+    "type" : "object",
+    "properties" : {
+      "basketItemId" : {
+        "type" : "string"
+      },
+      "productId" : {
+        "type" : "string"
+      },
+      "quantity" : {
+        "type" : "integer"
+      },
+      "userId" : {
+        "type" : "string"
+      },
+      "message" : {
+        "type" : "string"
+      }
+    },
+    "required" : [ "basketItemId", "productId", "quantity", "userId", "message" ],
+    "additionalProperties" : false
+  }
+}, {
+  "method" : "POST",
+  "path" : "/api/BasketItems",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "DELETE",
+  "path" : "/api/Quantitys/:id",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "POST",
+  "path" : "/api/Quantitys",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "PUT",
+  "path" : "/api/Feedbacks/:id",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "POST",
+  "path" : "/api/Cards",
+  "requestSchema" : { },
+  "responseSchema" : { }
+}, {
+  "method" : "GET",
+  "path" : "/api/Cards",
+  "requestSchema" : {
+    "type" : "object",
+    "properties" : {
+      "cardNumber" : {
+        "type" : "string"
+      },
+      "expiryDate" : {
+        "type" : "string",
+        "pattern" : "^(0[1-9]|1[0-2])\\/\\d{2}$"
+      },
+      "cardHolderName" : {
+        "type" : "string"
+      },
+      "cvv" : {
+        "type" : "string",
+        "minLength" : 3,
+        "maxLength" : 4
+      }
+    },
+    "required" : [ "cardNumber", "expiryDate", "cardHolderName", "cvv" ],
+    "additionalProperties" : false
+  },
+  "responseSchema" : {
+    "type" : "object",
+    "properties" : {
+      "id" : {
+        "type" : "string"
+      },
+      "cardNumber" : {
+        "type" : "string"
+      },
+      "expiryDate" : {
+        "type" : "string"
+      },
+      "cardHolderName" : {
+        "type" : "string"
+      }
+    },
+    "required" : [ "id", "cardNumber", "expiryDate", "cardHolderName" ],
+    "additionalProperties" : false
+  }
+}, {
+  "method" : "PUT",
+  "path" : "/api/Cards/:id",
+  "requestSchema" : { },
+  "responseSchema" : { }
+} ]
